@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kmira <kmira@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/08 13:37:37 by kmira             #+#    #+#              #
+#    Updated: 2019/08/08 13:41:28 by kmira            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# docker-machine ip <name>
+# where name is the name of the virtual machine you want to get the ip address of
+
+docker-machine ip Char

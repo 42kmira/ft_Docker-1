@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    31                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kmira <kmira@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/09 21:08:15 by kmira             #+#    #+#              #
+#    Updated: 2019/08/09 21:12:52 by kmira            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# the $(comamnd) will output a string and most if not all docker commands accept
+# multiple arguements.
+
+docker service rm $(docker service ls -q)
+docker service ls

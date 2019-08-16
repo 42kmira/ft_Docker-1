@@ -1,0 +1,34 @@
+  c>
+ >*
+  [ )
+ >*
+  c>
+
+[F:0]
+ c>
+>*
+ [ )
+>*
+ c>
+[F:1]
+ c>
+>*
+ [ )
+>*
+ c>
+[A:0]
+N;N;(58, 231, 240)
+();N
+N;N;(108, 195, 217);N
+();N
+N;N;(58, 231, 240)
+[A:1]
+N;N;(58, 231, 240)
+();N
+N;N;(108, 195, 217);N
+();N
+N;N;(58, 231, 240)
+[END]
+
+
+gcc -I../../includes -lncurses level1.c levels_common.c ../render.c ../transition/transition.c ../preperation.c ../assets/assets.c

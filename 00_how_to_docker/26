@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    26                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kmira <kmira@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/09 19:23:35 by kmira             #+#    #+#              #
+#    Updated: 2019/08/09 20:51:43 by kmira            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# See: https://hub.docker.com/r/42school/engineering-bay
+
+docker service create -d --network overmind --replicas 2 --name engineering-bay -e OC_USERNAME=user -e OC_PASSWD=passphrase 42school/engineering-bay

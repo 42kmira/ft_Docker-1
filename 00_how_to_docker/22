@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    22                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kmira <kmira@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/09 12:47:47 by kmira             #+#    #+#              #
+#    Updated: 2019/08/09 17:29:38 by kmira            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#  docker-machine ssh <name>
+docker-machine ssh Aiur
+
+# then on the manager run:
+# docker swarm join-token worker
+# and then use that on the ssh Aiur

@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kmira <kmira@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/08 22:38:02 by kmira             #+#    #+#              #
+#    Updated: 2019/08/08 22:47:25 by kmira            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# docker logs -f <name>
+# where name is the name of docker container
+# -f 'follows' the logs and so is 'real-time'
+# See https://docs.docker.com/engine/reference/commandline/logs/
+
+docker logs -f spawning-pool

@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kmira <kmira@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/08 21:23:16 by kmira             #+#    #+#              #
+#    Updated: 2019/08/08 22:40:34 by kmira            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# -e sets the environment variables
+# -v makes one volumes the other or something like that
+# due to authentication issues one has to use mysql:5.7
+# See: https://forum.intra.42.fr/topics/19022/messages?page=1#92008
+
+docker run -d --restart=on-failure --name spawning-pool -v hatchery:/var/spool/mysql -e MYSQL_ROOT_PASSWORD=Kerrigan -e MYSQL_DATABASE=zerglings mysql:5.7

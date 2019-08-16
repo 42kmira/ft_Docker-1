@@ -1,0 +1,31 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    19                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kmira <kmira@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/08 22:54:31 by kmira             #+#    #+#              #
+#    Updated: 2019/08/09 12:13:40 by kmira            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker run --name Abathur -p 3000:3000 -v ~/:/root -dit python:2-slim
+
+docker exec Abathur pip install flask
+docker exec Abathur pip install update
+
+# hello world program from the flask webpage
+
+# commands inside the machine should be:
+# docker cp <file_path/file_name> Abathur:<dest_path>
+echo 'from flask import Flask\napp = Flask(__name__)\n@app.route("/")\ndef hello_world():\n\treturn "<h1>Hello, World!</h1>"' > ~/app.py
+docker exec -e FLASK_APP=/root/app.py Abathur flask run --host=0.0.0.0 --port 3000
+
+# might change
+# url was: http://192.168.99.100:3000/
+
+# docker inspect Abathur
+# to ensure the disk mount was set up correctly. One might need to
+# delete and reput the file for it to work?
+

@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    28                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kmira <kmira@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/09 20:52:02 by kmira             #+#    #+#              #
+#    Updated: 2019/08/09 21:38:24 by kmira            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# See: https://hub.docker.com/r/42school/marine-squad
+
+docker service create --replicas 2 --network overmind -d -e OC_USERNAME=user -e OC_PASSWD=passphrase --name marines 42school/marine-squad

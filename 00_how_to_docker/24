@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    24                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kmira <kmira@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/08/09 17:02:31 by kmira             #+#    #+#              #
+#    Updated: 2019/08/09 19:23:57 by kmira            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# See: https://docs.docker.com/engine/reference/commandline/service_create/
+
+docker service create -d --network overmind --name orbital-command -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=passphrase rabbitmq
