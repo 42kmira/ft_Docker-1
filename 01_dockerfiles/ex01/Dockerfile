@@ -11,7 +11,7 @@ RUN apt-get update \
 ENTRYPOINT sh ts3server_minimal_runscript.sh
 
 # to build the image container:
-# docker builld -t ex01 .
+# docker build -t ex01 .
 # then do:
 # docker run -d -e TS3SERVER_LICENSE=accept -p 9987:9987/udp -p 10011:10011 -p 30033:30033 ex01
 # the ip will be the ip of the virtual machine:

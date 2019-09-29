@@ -52,7 +52,7 @@
 # CMD ["/assets/wrapper"]
 
 
-FROM debian:9
+FROM debian:8
 
 ENV DEBIAN_FRONTEND=noninteractive
 
