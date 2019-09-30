@@ -71,3 +71,5 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure
 # to run you build with a tag then run that tag and it should all work
 # I got my sources from https://github.com/bigdiggysquiggle/docker/blob/master/01_dockerfiles/ex03/Dockerfile
 # and: https://about.gitlab.com/install/#debian
+
+#docker run -it --rm -p 8080:80 -p 8022:22 -p 8443:443 --privileged ex03
